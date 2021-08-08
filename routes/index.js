@@ -14,8 +14,8 @@ const {
 router.get("/user", verifyAccessToken, user);
 
 // UserRole("admin")
-router.post("/add", verifyAccessToken, (req, res) => {
-  res.send("add items");
+router.get("/", (req, res) => {
+  res.send("express app");
 });
 
 router.post("/register", register);
